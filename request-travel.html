@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request Travel Planning - Unbound Concierge Services">
+    <title>Request Travel Planning - Unbound Concierge Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="logo.png" alt="Unbound Concierge Services" class="logo-small">
+        </a>
+    </header>
+    
+    <main class="container">
+        <div class="contact-content">
+            <h1 class="page-title">Plan Your Trip</h1>
+            
+            <p class="contact-intro">Tell us about your dream holiday - we'll design the perfect trip.</p>
+            
+            <form action="https://formspree.io/f/YOUR_TRAVEL_FORM_ID" method="POST" class="contact-form travel-form">
+                
+                <div class="form-section-header">
+                    <h2>Your Details</h2>
+                </div>
+                
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-section-header">
+                    <h2>The Basics</h2>
+                </div>
+                
+                <div class="form-group">
+                    <label for="destination">Where are you thinking?</label>
+                    <select id="destination" name="destination" required>
+                        <option value="">Select region...</option>
+                        <option value="europe">Europe</option>
+                        <option value="caribbean">Caribbean</option>
+                        <option value="usa">USA</option>
+                        <option value="asia">Asia</option>
+                        <option value="africa">Africa</option>
+                        <option value="middle-east">Middle East</option>
+                        <option value="uk">UK</option>
+                        <option value="open">Not sure yet / open to suggestions</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="timeframe">When are you thinking?</label>
+                    <input type="text" id="timeframe" name="timeframe" placeholder="e.g., June 2027, Summer 2027, or 'Flexible'" required>
+                    <p class="form-help">Month, season, or let us know if you're flexible</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="duration">How long?</label>
+                    <select id="duration" name="duration" required>
+                        <option value="">Select duration...</option>
+                        <option value="long-weekend">Long weekend (3-4 days)</option>
+                        <option value="1-week">1 week</option>
+                        <option value="10-days">10 days</option>
+                        <option value="2-weeks">2 weeks</option>
+                        <option value="flexible">Flexible</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="travelers">Who's travelling?</label>
+                    <input type="text" id="travelers" name="travelers" placeholder="e.g., 2 adults, Family with kids aged 5 & 8, Group of 6 friends" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="budget">Rough budget per person</label>
+                    <select id="budget" name="budget" required>
+                        <option value="">Select budget range...</option>
+                        <option value="500-1000">£500-1,000</option>
+                        <option value="1000-2000">£1,000-2,000</option>
+                        <option value="2000-3000">£2,000-3,000</option>
+                        <option value="3000-5000">£3,000-5,000</option>
+                        <option value="5000-plus">£5,000+</option>
+                        <option value="no-limit">No specific limit</option>
+                    </select>
+                </div>
+                
+                <div class="form-section-header magic-questions">
+                    <h2>The Important Bits ✨</h2>
+                    <p>These two questions help us design your perfect trip</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="can-live-with">What CAN you live with?</label>
+                    <textarea id="can-live-with" name="can-live-with" rows="5" placeholder="What compromises are you OK making? (e.g., being somewhere lively/busy, inland location, one connecting flight, 3-star vs 5-star, self-catering, etc.)" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="cant-live-without">What CAN'T you live without?</label>
+                    <textarea id="cant-live-without" name="cant-live-without" rows="5" placeholder="What are your absolute must-haves? Deal-breakers? (e.g., kids club, spa, air con, pool, walking distance to beach, vegetarian options, etc.)" required></textarea>
+                </div>
+                
+                <div class="form-section-header">
+                    <h2>Tell Us More</h2>
+                </div>
+                
+                <div class="form-group">
+                    <label for="imagining">What kind of holiday are you imagining?</label>
+                    <textarea id="imagining" name="imagining" rows="6" placeholder="Don't worry about being specific - just share your thoughts. What are you dreaming about? Anything you loved (or hated) about past holidays?"></textarea>
+                    <p class="form-help">This helps us understand the vibe you're after</p>
+                </div>
+                
+                <button type="submit" class="cta-button">Submit Travel Request</button>
+            </form>
+            
+            <div class="alternative-contact">
+                <p>Prefer to discuss your trip over email?</p>
+                <a href="mailto:hello@unboundconcierge.co.uk" class="email-link">hello@unboundconcierge.co.uk</a>
+            </div>
+            
+            <footer class="footer">
+                <p>&copy; 2026 Unbound Concierge Services LLP</p>
+            </footer>
+        </div>
+    </main>
+</body>
+</html>

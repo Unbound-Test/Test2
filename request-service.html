@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request Vehicle or Home Service - Unbound Concierge Services">
+    <title>Request Service - Unbound Concierge Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="logo.png" alt="Unbound Concierge Services" class="logo-small">
+        </a>
+    </header>
+    
+    <main class="container">
+        <div class="contact-content">
+            <h1 class="page-title">Request Service</h1>
+            
+            <p class="contact-intro">Vehicle maintenance or home repairs - we'll coordinate everything.</p>
+            
+            <form action="https://formspree.io/f/YOUR_VEHICLE_HOME_FORM_ID" method="POST" class="contact-form" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="service-type">Service Type</label>
+                    <select id="service-type" name="service-type" required>
+                        <option value="">Select service type...</option>
+                        <option value="vehicle">Vehicle (MOT, service, repair)</option>
+                        <option value="home">Home (boiler, plumbing, electrical, gas)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="description">What needs doing?</label>
+                    <textarea id="description" name="description" rows="4" placeholder="Brief description of what you need - we'll follow up with any questions" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="photo">Photo (optional but helpful)</label>
+                    <input type="file" id="photo" name="photo" accept="image/*">
+                    <p class="form-help">e.g., dashboard warning light, leak location, part that needs replacing</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="urgency">Urgency</label>
+                    <select id="urgency" name="urgency" required>
+                        <option value="">How urgent is this?</option>
+                        <option value="urgent">Urgent (ASAP - safety issue or broken down)</option>
+                        <option value="this-week">This week</option>
+                        <option value="this-month">This month</option>
+                        <option value="not-urgent">Not urgent (just coordinate when convenient)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact-preference">How should we contact you?</label>
+                    <select id="contact-preference" name="contact-preference" required>
+                        <option value="">Select preference...</option>
+                        <option value="whatsapp">WhatsApp</option>
+                        <option value="email">Email</option>
+                        <option value="phone">Phone call</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="cta-button">Submit Request</button>
+            </form>
+            
+            <div class="alternative-contact">
+                <p>Need to speak to us urgently?</p>
+                <a href="mailto:hello@unboundconcierge.co.uk" class="email-link">hello@unboundconcierge.co.uk</a>
+            </div>
+            
+            <footer class="footer">
+                <p>&copy; 2026 Unbound Concierge Services LLP</p>
+            </footer>
+        </div>
+    </main>
+</body>
+</html>
